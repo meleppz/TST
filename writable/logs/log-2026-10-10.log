@@ -1,0 +1,308 @@
+ERROR - 2026-10-10 08:25:57 --> Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1744): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', [], false)
+ 5 APPPATH\Models\CustomerModel.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Customers.php(23): App\Models\CustomerModel->search(null, 2, 0)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:25:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.customer' doesn't exist
+[Method: GET, Route: customers]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1744): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', [], false)
+ 2 APPPATH\Models\CustomerModel.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH\Controllers\Customers.php(23): App\Models\CustomerModel->search(null, 2, 0)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:25:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1744): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', [], false)
+ 4 APPPATH\Models\CustomerModel.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 APPPATH\Controllers\Customers.php(23): App\Models\CustomerModel->search(null, 2, 0)
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:25:57 --> [Caused by] mysqli_sql_exception: Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1744): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', [], false)
+ 5 APPPATH\Models\CustomerModel.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Customers.php(23): App\Models\CustomerModel->search(null, 2, 0)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+ERROR - 2026-10-10 08:25:57 --> Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = :customer.customer_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(195): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(615): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\Customers.php(50): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->summary('1')
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:25:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.customer' doesn't exist
+[Method: GET, Route: customers/1/summary]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = :customer.customer_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(195): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(615): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Customers.php(50): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->summary('1')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:25:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = :customer.customer_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(195): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(615): CodeIgniter\Model->doFind(true, '1')
+ 6 APPPATH\Controllers\Customers.php(50): CodeIgniter\BaseModel->find('1')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->summary('1')
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:25:57 --> [Caused by] mysqli_sql_exception: Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = :customer.customer_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(195): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(615): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\Customers.php(50): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->summary('1')
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+ERROR - 2026-10-10 08:25:57 --> Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'99999999\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'99999999\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'99999999\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = :customer.customer_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(195): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(615): CodeIgniter\Model->doFind(true, '99999999')
+ 7 APPPATH\Controllers\Customers.php(38): CodeIgniter\BaseModel->find('99999999')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->show('99999999')
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:25:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.customer' doesn't exist
+[Method: GET, Route: customers/99999999]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = :customer.customer_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(195): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(615): CodeIgniter\Model->doFind(true, '99999999')
+ 4 APPPATH\Controllers\Customers.php(38): CodeIgniter\BaseModel->find('99999999')
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->show('99999999')
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:25:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'99999999\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'99999999\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = :customer.customer_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(195): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(615): CodeIgniter\Model->doFind(true, '99999999')
+ 6 APPPATH\Controllers\Customers.php(38): CodeIgniter\BaseModel->find('99999999')
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->show('99999999')
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:25:57 --> [Caused by] mysqli_sql_exception: Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'99999999\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'99999999\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = \'99999999\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `customer`
+WHERE `customer`.`customer_id` = :customer.customer_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(195): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(615): CodeIgniter\Model->doFind(true, '99999999')
+ 7 APPPATH\Controllers\Customers.php(38): CodeIgniter\BaseModel->find('99999999')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Customers->show('99999999')
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customers))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+ERROR - 2026-10-10 08:31:20 --> Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1744): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', [], false)
+ 5 APPPATH\Models\CustomerModel.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\CustomerAPI.php(22): App\Models\CustomerModel->search(null, 5, 0)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CustomerAPI->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAPI))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:31:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.customer' doesn't exist
+[Method: GET, Route: customers]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1744): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', [], false)
+ 2 APPPATH\Models\CustomerModel.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH\Controllers\CustomerAPI.php(22): App\Models\CustomerModel->search(null, 5, 0)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CustomerAPI->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAPI))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:31:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1744): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', [], false)
+ 4 APPPATH\Models\CustomerModel.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 APPPATH\Controllers\CustomerAPI.php(22): App\Models\CustomerModel->search(null, 5, 0)
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CustomerAPI->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2026-10-10 08:31:20 --> [Caused by] mysqli_sql_exception: Table 'foodmart.customer' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `customer`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1744): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `customer`', [], false)
+ 5 APPPATH\Models\CustomerModel.php(30): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\CustomerAPI.php(22): App\Models\CustomerModel->search(null, 5, 0)
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CustomerAPI->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerAPI))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\melvi\\Downloads\\TST\\CodeIgniter4-develop\\public\\index.php')
